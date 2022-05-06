@@ -1,15 +1,18 @@
 @font-face {
   font-family: "Josefin Slab";
   src: url("JosefinSlab-Light.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
   src: url("Roboto-Light.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   src: url("RobotoMono-LightItalic.ttf");
+  font-display: swap;
 }
 
 .wrapper {
