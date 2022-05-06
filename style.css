@@ -105,6 +105,9 @@ img.about {
 p.about {
   padding-left: 2rem;
 }
+ul.about li {
+  margin-left: 1rem;
+}
 div.projects {
   display: flex;
   flex-wrap: wrap;
