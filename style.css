@@ -145,11 +145,16 @@ div.project a,
 div.project ul li:first-child {
   padding-left: 0;
 }
+#Contact h2 {
+  text-align: center;
+}
 
 #Contact ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 #Contact ul li {
   display: inline-block;
