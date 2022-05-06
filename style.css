@@ -1,0 +1,300 @@
+@font-face {
+  font-family: "Josefin Slab";
+  src: url("JosefinSlab-Light.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("RobotoMono-LightItalic.ttf");
+}
+
+.wrapper {
+  max-width: 54em;
+  margin: auto;
+}
+
+#nav {
+  list-style-type: none;
+  padding: 0;
+  animation: fadein 6s;
+}
+
+#nav li {
+  display: inline-block;
+  padding: 26px;
+}
+
+#nav li:first-child {
+  padding-left: 0;
+}
+
+#nav li a {
+  color: #000000;
+  text-decoration: none;
+}
+#sub-introduction {
+  animation: fadein 3.5s;
+  font-size: 2.4rem;
+  margin-block-end: 4rem;
+}
+body {
+  margin: auto;
+  max-width: 63em;
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  line-height: 1.7;
+  padding: 4vh 6vw;
+}
+
+nav {
+  margin: 1rem 0 1rem;
+}
+
+main {
+  animation: fadein 6s;
+}
+
+h1 {
+  font-family: "Josefin Slab", serif;
+  font-size: 3.1rem;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+
+h2 {
+  font-family: "Roboto Mono";
+  font-size: 1.7rem;
+  text-decoration: underline;
+  font-weight: lighter;
+}
+
+h3 {
+  font-family: "Roboto Mono";
+  font-size: 1.2 rem;
+  font-weight: 300;
+}
+a:link,
+a:visited,
+a:active {
+  text-decoration-color: #75b9be;
+  color: #123d40;
+}
+a:hover {
+  color: black;
+  text-decoration-color: #75b9be;
+}
+div.about {
+  display: flex;
+}
+
+.rounded-corners {
+  border-radius: 0.5rem;
+}
+
+img.about {
+  width: 300px;
+  height: 300px;
+}
+p.about {
+  padding-left: 2rem;
+}
+div.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+div.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  height: 500px;
+  margin-right: 4rem;
+}
+
+div.project h3 a {
+  color: black;
+}
+
+div.project img {
+  max-width: 300px;
+}
+
+div.project ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+div.project ul li {
+  display: inline-block;
+  padding: 4px;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+div.project a,
+#Contact ul li a {
+  font-family: "Roboto Mono";
+}
+
+div.project ul li:first-child {
+  padding-left: 0;
+}
+
+#Contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#Contact ul li {
+  display: inline-block;
+  padding: 8px;
+}
+
+#Contact ul li:first-child {
+  padding-left: 0;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  div.about {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Rotating Text Adapted from this codepen: https://codepen.io/amritleone/pen/qERPmW */
+.rotating {
+  display: inline;
+}
+.rotating span {
+  animation: topToBottom 12.5s linear infinite 0s;
+  -ms-animation: topToBottom 12.5s linear infinite 0s;
+  -webkit-animation: topToBottom 12.5s linear infinite 0s;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  text-decoration: underline;
+  text-decoration-color: #75b9be;
+  text-decoration-thickness: 2px;
+}
+.rotating span:nth-child(2) {
+  animation-delay: 2.5s;
+  -ms-animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+}
+.rotating span:nth-child(3) {
+  animation-delay: 5s;
+  -ms-animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+}
+.rotating span:nth-child(4) {
+  animation-delay: 7.5s;
+  -ms-animation-delay: 7.5s;
+  -webkit-animation-delay: 7.5s;
+}
+.rotating span:nth-child(5) {
+  animation-delay: 10s;
+  -ms-animation-delay: 10s;
+  -webkit-animation-delay: 10s;
+}
+
+@-moz-keyframes topToBottom {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    -moz-transform: translateY(-50px);
+  }
+  10% {
+    opacity: 1;
+    -moz-transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    -moz-transform: translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    -moz-transform: translateY(50px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes topToBottom {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-ms-keyframes topToBottom {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    -ms-transform: translateY(-50px);
+  }
+  10% {
+    opacity: 1;
+    -ms-transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    -ms-transform: translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    -ms-transform: translateY(50px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
